@@ -1,1 +1,16 @@
-# Instructory - WordPress Theme Development Scratch WorkOut
+# Instructory - WordPress Theme Development 
+ - Introduction
+ - Setup & Installation
+ - Theme Environment
+ - Theme Details
+ - Theme Support
+ - Register Sidebar, Menu, Taxonomy and Custom Post Type
+ - The Most Common Basic Functions
+ - Dynamic Menu, Sidebar and Post
+ - Simple Basic Project
+ - Page Template
+ - HTML ~ WordPress Conversion
+ - Action Hook
+ - Filter Hook
+ - Hook Application in project
+ - Enquque
