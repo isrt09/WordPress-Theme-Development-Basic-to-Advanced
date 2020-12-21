@@ -21,5 +21,20 @@
 		'name'        => 'FOOTER SIDEBAR',
 		'description' => 'This is for Footer Sidebar Area Section',
 		'id'          => 'footer-sidebar'
-	]);	
+	]);
+   
+    /* This is for newbie learner
+	register_nav_menu('main-menu','Main Menu');
+	register_nav_menu('footer-menu','Footer Menu');
+	register_nav_menu('sidebar-menu','Sidebar Menu');
+	register_nav_menu('mega-menu','Mega Menu');
+	*/
+
+	/* This is standard way to write down menu register ... */
+	register_nav_menus([
+		'first_menu'   => 'Main Menu',
+		'footer-menu'  => 'Footer Menu',
+		'sidebar-menu' => 'Sidebar Menu',
+		'mega-menu'    => 'Mega Menu'
+	])
  ?>
