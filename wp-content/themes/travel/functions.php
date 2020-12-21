@@ -36,5 +36,36 @@
 		'footer-menu'  => 'Footer Menu',
 		'sidebar-menu' => 'Sidebar Menu',
 		'mega-menu'    => 'Mega Menu'
-	])
+	]);
+
+	register_post_type('gallery',[
+		'public' => true,
+		'labels' => [
+			'name' 				 => 'Gallery',
+			'all_items' 		 => 'All Galleries',
+			'add_new'   		 => 'Add New Gallery',
+			'add_new_item'	 	 => 'Add New Gallery',
+			'featured_image' 	 => 'Gallery Image',
+			'set_featured_image' => 'Set Gallery Image',				
+		],
+		'supports' => ['title','editor','thumbnail'],
+		'menu_position'      => 5,
+		'menu_icon'          => 'dashicons-format-image'	
+	]);
+
+	register_post_type('news',[
+		'public' => true,
+		'labels' =>[
+			'name' 		   => 'News',
+			'all_items'    => 'All News',
+			'add_new'      => 'Add New News',
+			'add_new_item' => 'Add News',
+		  'featured_image' => 'News Image',
+	   'set_featured_image'=> 'Set News Image'		
+		],
+		'supports'         => ['title','editor','thumbnail'],
+		'menu_position'    => 5,
+		'menu_icon'        => 'dashicons-format-aside'
+	]);
+	
  ?>
