@@ -7,9 +7,9 @@
  - Register Sidebar, Menu, Taxonomy and Custom Post Type
  - The Most Common Basic Functions
  - Dynamic Menu, Sidebar and Post
- - Simple Basic Project
+ - Simple Basic Project [Project-1]
  - Page Template
- - HTML ~ WordPress Conversion
+ - HTML ~ WordPress Conversion [Project-2]
  - Action Hook
  - Filter Hook
  - Hook Application in project
