@@ -50,7 +50,7 @@
 		],
 		'supports' => ['title','editor','thumbnail'],
 		'menu_position'      => 5,
-		'menu_icon'          => 'dashicons-format-image'	
+		'menu_icon'          => 'dashicons-format-gallery'	
 	]);
 
 	register_post_type('news',[
@@ -65,7 +65,17 @@
 		],
 		'supports'         => ['title','editor','thumbnail'],
 		'menu_position'    => 5,
-		'menu_icon'        => 'dashicons-format-aside'
+		'menu_icon'        => 'dashicons-admin-home'
 	]);
-	
+
+	register_taxonomy('gal_tag','gallery',[
+		'public' => true,		
+	]);
+
+	register_taxonomy('gal_tag_cat','gallery',[
+		'public' 	   => true,
+		'hierarchical' => true
+	]);
+
  ?>
+
