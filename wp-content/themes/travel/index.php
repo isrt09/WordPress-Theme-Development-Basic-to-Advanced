@@ -15,7 +15,7 @@
 				'theme_location' => 'first_menu',
 				'container_class'=> 'myClass'
 			]);
-		 ?>
+		 ?>		
 		<!-- <ul>
 			<li><a href="">Home</a></li>
 			<li><a href="">About</a></li>
@@ -23,12 +23,25 @@
 			<li><a href="">Blog</a></li>
 			<li><a href="">Contact</a></li>
 	    </ul> -->	
+	<!-- 
 	<div class="leftbar">
 		<?php dynamic_sidebar('ls'); ?>
-	</div>	
+	</div>
+	-->
+	<?php 
+		while(have_posts()): the_post(); ?>	
+	<div class="content">		
+		<h1><?php the_title(); ?></h1>
+		<!-- <img src="<?php echo get_template_directory_uri()?>/img/image01.jpg" alt=""> -->
+		<?php the_post_thumbnail();?>
+		<p><?php the_content(); ?></p>
+	</div>
+	<?php endwhile; ?>	
+	<!--
 	<div class="rightbar">
 		<?php dynamic_sidebar('rs'); ?>
 	</div>
+	-->
 	<?php wp_footer(); ?>
 </body>
 </html>

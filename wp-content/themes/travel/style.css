@@ -37,15 +37,43 @@ ul li a{
 	padding: 0px 20px;
 }
 
+.body{
+	width: 900px;
+}
 .leftbar{
 	width: 300px;
 	float:left;
-	height: 100vh;
+	height: 800vh;
 	background-color: red;
+	list-style: none;
+	text-align: center;
 }
 .rightbar{
 	width: 300px;
 	float:right;
 	height: 100vh;
 	background-color: green;
+	list-style: none;
+	text-align: center;
+	padding-top: 10px;
+}
+.content{
+	width:100%; 	
+	float: right;
+	overflow: hidden;
+	padding:10px 20px;	
+}
+.content h1{
+	text-align: center;
+}
+.content p{
+	text-align: justify;
+	margin:30px auto;
+}
+.content img{
+	display: block;
+	border-radius: 10px;
+	margin:30px auto;
+	width: 400px;
+	height: 400px;
 }
