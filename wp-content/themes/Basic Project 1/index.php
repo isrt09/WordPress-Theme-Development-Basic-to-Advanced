@@ -12,42 +12,39 @@
          <div class="menu">
             <div class="mid">
                <div class="logo">
-                  <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
+                  <?php the_custom_logo();?>
                </div>
-               <ul>
+               <!-- <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Info</a></li>
                   <li><a href="#">Contact</a></li>
-               </ul>
+               </ul> -->
+               <?php wp_nav_menu([
+               		'theme_location' => 'main_menu',
+               		'container_class'=> '',
+               		'container_id'   => '',
+               ]); ?>
             </div>
          </div>
       </section>
       <section class="header_image">
-         <img src="<?php echo get_template_directory_uri();?>/images/woman-in-white-t-shirt-holding-smartphone-in-front-of-laptop-914931.jpg" alt="">
+         <img src="<?php header_image(); ?>" alt="">
       </section>
       <section class="posts">
+      	<?php while(have_posts()): the_post(); ?>									
          <div class="post">
-            <h2>Our Latest Post</h2>
+            <h2><?php the_title(); ?></h2>
             <hr>
             <div class="mid">
                <div class="post1">
-                  <img src="<?php echo get_template_directory_uri();?>/images/SmartBuilding.jpg" alt="">
-                  <h3>Title Onee</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit quo possimus, iure ducimus. Ea dolor, molestias ab unde enim maxime quasi iste iure tempora quis laudantium voluptatibus labore aperiam eos voluptate neque nobis, laborum suscipit optio ad? Assumenda quam consequuntur perspiciatis recusandae atque autem doloremque nulla necessitatibus dolorum eaque commodi cum repellendus placeat dignissimos reiciendis veniam aperiam minus, doloribus ipsam possimus expedita molestiae. Ex corrupti distinctio ratione quaerat, atque. Quia, veritatis, voluptatem rerum iure incidunt eaque ipsa laudantium qui, accusantium delectus dolore aliquam id perferendis accusamus consequuntur! Ex, sint minima consequatur nulla delectus numquam, a ad sapiente quos fugiat.</p>
-               </div>
-               <div class="post1">
-                  <img src="<?php echo get_template_directory_uri();?>/images/SmartBuilding.jpg" alt="">
-                  <h3>Title Onee</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit quo possimus, iure ducimus. Ea dolor, molestias ab unde enim maxime quasi iste iure tempora quis laudantium voluptatibus labore aperiam eos voluptate neque nobis, laborum suscipit optio ad? Assumenda quam consequuntur perspiciatis recusandae atque autem doloremque nulla necessitatibus dolorum eaque commodi cum repellendus placeat dignissimos reiciendis veniam aperiam minus, doloribus ipsam possimus expedita molestiae. Ex corrupti distinctio ratione quaerat, atque. Quia, veritatis, voluptatem rerum iure incidunt eaque ipsa laudantium qui, accusantium delectus dolore aliquam id perferendis accusamus consequuntur! Ex, sint minima consequatur nulla delectus numquam, a ad sapiente quos fugiat.</p>
-               </div>
-               <div class="post1">
-                  <img src="<?php echo get_template_directory_uri();?>/images/SmartBuilding.jpg" alt="">
-                  <h3>Title Onee</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit quo possimus, iure ducimus. Ea dolor, molestias ab unde enim maxime quasi iste iure tempora quis laudantium voluptatibus labore aperiam eos voluptate neque nobis, laborum suscipit optio ad? Assumenda quam consequuntur perspiciatis recusandae atque autem doloremque nulla necessitatibus dolorum eaque commodi cum repellendus placeat dignissimos reiciendis veniam aperiam minus, doloribus ipsam possimus expedita molestiae. Ex corrupti distinctio ratione quaerat, atque. Quia, veritatis, voluptatem rerum iure incidunt eaque ipsa laudantium qui, accusantium delectus dolore aliquam id perferendis accusamus consequuntur! Ex, sint minima consequatur nulla delectus numquam, a ad sapiente quos fugiat.</p>
-               </div>
+                 <?php the_post_thumbnail();?>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_content(); ?></p>
+               </div>              
             </div>
+             <?php endwhile; ?>
          </div>
       </section>
       <?php wp_footer(); ?>

@@ -6,4 +6,9 @@
 	add_theme_support('custom-background');
 	add_theme_support('post-thumbnails');
 	add_theme_support('post-formats',['audio','video','gallery']);
+
+	register_nav_menus([
+		'main_menu' => 'Main Menu',
+		'id'		=> 'main_menu'
+	]);
  ?>
