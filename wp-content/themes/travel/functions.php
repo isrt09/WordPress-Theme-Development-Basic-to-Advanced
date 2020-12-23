@@ -10,17 +10,17 @@
 	register_sidebar([
 		'name'        => 'LEFT SIDEBAR',
 		'description' => 'This is for Left Sidebar Area Section',
-		'id'          => 'left-sidebar'
+		'id'          => 'ls',
 	]);	
 	register_sidebar([
 		'name'        => 'RIGHT SIDEBAR',
 		'description' => 'This is for Right Sidebar Area Section',
-		'id'          => 'right-sidebar'
+		'id'          => 'rs',
 	]);	
 	register_sidebar([
 		'name'        => 'FOOTER SIDEBAR',
 		'description' => 'This is for Footer Sidebar Area Section',
-		'id'          => 'footer-sidebar'
+		'id'          => 'fs',
 	]);
    
     /* This is for newbie learner
