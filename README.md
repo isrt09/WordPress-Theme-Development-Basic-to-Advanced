@@ -13,4 +13,9 @@
  - Action Hook
  - Filter Hook
  - Hook Application in project
- - Enquque
+ - Enqueue
+ - Redux Framework Installation
+ - Redux Framework Augmentation Setup
+ - Redux Framework (Section)
+ - Redux Framework (Sub-section,Fields)
+ - Redux Framework Output Setup
