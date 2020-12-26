@@ -11,5 +11,11 @@
     register_nav_menus([
 	  'first_menu'    => 'Main Menu',
 	  'footer-menu'   => 'Footer Menu',	 
-	])
+	]);
+
+	register_sidebar([
+	  'name'        => 'Left Sidebar',
+	  'description' => 'This is Left Side Bar',
+	  'id'          => 'left-sidebar'
+	]);
  ?>
