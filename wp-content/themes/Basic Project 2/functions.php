@@ -18,4 +18,15 @@
 	  'description' => 'This is Left Side Bar',
 	  'id'          => 'left-sidebar'
 	]);
+
+	register_post_type('notice',[
+		'public' => true,
+		'labels' => [
+			'name'         => 'Notice Board',
+			'all_items'    => 'Add New Notice',
+			'add_new_item' => 'Add New Notice',
+		],
+		'supports'         => ['title','editor','thumbnail'],
+		'menu_icon'   	   => 'dashicons-bell'
+	]);
  ?>
