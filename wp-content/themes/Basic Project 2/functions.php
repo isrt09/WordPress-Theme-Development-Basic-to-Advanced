@@ -29,4 +29,15 @@
 		'supports'         => ['title','editor','thumbnail'],
 		'menu_icon'   	   => 'dashicons-bell'
 	]);
+
+	register_post_type('slider',[
+		'public'  => true,
+		'labels'  => [
+			'name'			=> 'New Slider',
+			'all_item' 		=> 'All Sliders',
+			'add_new_item'  => 'Add New Slider'
+		],
+		'supports'         => ['thumbnail'],
+		'menu_icon'   	   => 'dashicons-format-gallery'
+	]);
  ?>
