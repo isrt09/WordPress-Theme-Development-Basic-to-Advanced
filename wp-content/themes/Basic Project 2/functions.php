@@ -40,4 +40,15 @@
 		'supports'         => ['thumbnail'],
 		'menu_icon'   	   => 'dashicons-format-gallery'
 	]);
+
+	add_action('arif', 'testAction');
+	add_action('mazed', 'icddrb');
+	function testAction(){
+		echo 'Welcome to WordPress...';
+	}
+
+	function icddrb(){
+		echo "Welcome to join Instructory Community";
+	}
+	remove_action('mazed','icddrb');
  ?>

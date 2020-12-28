@@ -15,10 +15,14 @@
                   </div>
                   <?php endwhile; ?>                  
                </div>
-            </div>
+            </div>            
             <div class="right">
                <?php get_sidebar(); ?>   
             </div>
          </div>
       </div>
+      <?php 
+          echo do_action('arif');
+       ?>
+       <h1><?php do_action('mazed') ?></h1>
 <?php get_footer(); ?>      
