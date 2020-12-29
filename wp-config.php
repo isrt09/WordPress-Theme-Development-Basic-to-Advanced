@@ -37,6 +37,7 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -54,6 +55,7 @@ define( 'AUTH_SALT',        'i:%BX2.K2{74J5`UYa[f <]UV]2eZaCcM`tbTE?b}r`a_WI(K+b
 define( 'SECURE_AUTH_SALT', 'dI {Z3Ru,-.yWe<U*X}9N-0]Aed?` X{ROWJX74#=TSu@.z{Z^9)y6ec/4$33GKX' );
 define( 'LOGGED_IN_SALT',   '7;,<kx$v~5pKEr3f+DMF9#[6jcomRN3pg;EtRv N,@F vib r__V?e(K#E+%_?TT' );
 define( 'NONCE_SALT',       '![Y>zLI>gq_kg*tj&:A`E)Lplxabp,!..DJ422C3H%fqi^&2BzLtTFr`mXg1Mc{I' );
+
 
 /**#@-*/
 
@@ -88,3 +90,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+/** ‘That’s all, stop editing! Happy blogging.’ */
+define('WP_MEMORY_LIMIT', '256M');

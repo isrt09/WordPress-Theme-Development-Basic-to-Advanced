@@ -53,6 +53,19 @@
     	'description' => 'Test Demo Sidebar...'
     	]);	
     }
-
     
+    function css_js_connect(){
+    	/* css scripts ...*/
+    	wp_enqueue_style('fontswesome',  get_template_directory_uri().'/css/font-awesome.min.css');
+    	wp_enqueue_style('normalize',    get_template_directory_uri().'/css/normalize.css');
+    	wp_enqueue_style('carousel',     get_template_directory_uri().'/css/owl.carousel.css');
+    	wp_enqueue_style('transitions',  get_template_directory_uri().'/css/owl.transitions.css');
+    	wp_enqueue_style('main_css',     get_stylesheet_uri());
+    	
+    	/* JS scripts ...*/
+    	wp_enqueue_script('jquery');
+    	wp_enqueue_script('carousel', get_template_directory_uri().'/js/owl.carousel.min.js');
+    	wp_enqueue_script('slider',   get_template_directory_uri().'/js/slider.js');
+    }
+    add_action('wp_enqueue_scripts','css_js_connect');
  ?>

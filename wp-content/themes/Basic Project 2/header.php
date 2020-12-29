@@ -2,12 +2,7 @@
 <html <?php language_attributes(); ?>>
    <head>
       <meta charset="UTF-8">
-      <title><?php bloginfo('title') ?></title>
-      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/owl.transitions.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" media="all" />
+      <title><?php bloginfo('title') ?></title>      
       <?php wp_head(); ?>
    </head>
    <body <?php body_class(); ?>>
