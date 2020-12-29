@@ -10,7 +10,7 @@
 
 
     // This is your option name where all the Redux data is stored.
-    $opt_name = "redux_demo";
+    $opt_name = "My_Redux";
 
     // This line is only for altering the demo. Can be easily removed.
     $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
@@ -391,3 +391,16 @@
         }
     }
 
+Redux::setSection('My_Redux',[
+    'title' =>  'General'
+]);
+
+Redux::setSection('My_Redux',[
+    'title' =>  'Header',
+    'icon'  =>  'el el-list '
+]);
+
+Redux::setSection('My_Redux',[
+    'title' =>  'Footer',
+    'icon'  =>  'el el-heart '
+]);
