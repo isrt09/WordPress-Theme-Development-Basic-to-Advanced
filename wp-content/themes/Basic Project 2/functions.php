@@ -68,4 +68,8 @@
     	wp_enqueue_script('slider',   get_template_directory_uri().'/js/slider.js',['jquery'],['carousel'],true,true);
     }
     add_action('wp_enqueue_scripts','css_js_connect');
+
+    /* Redux Framework */
+    require_once 'opt/ReduxCore/framework.php';
+    require_once 'opt/sample/config.php';
  ?>
