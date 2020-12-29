@@ -391,6 +391,9 @@
         }
     }
 
+/*
+
+
 Redux::setSection('My_Redux',[
     'title' =>  'General'
 ]);
@@ -404,3 +407,25 @@ Redux::setSection('My_Redux',[
     'title' =>  'Footer',
     'icon'  =>  'el el-heart '
 ]);
+*/
+
+Redux::setSection('My_Redux',[
+    'title' => 'General'
+]);
+Redux::setSection('My_Redux',[
+    'title' => 'Header',
+    'icon'  => 'el el-torso',
+    'subsection' => true
+]);
+
+Redux::setSection('My_Redux',[
+    'title' => 'footer',
+    'icon'  => 'el el-torso',
+    'subsection' => true
+]);
+
+Redux::setSection('My_Redux',[
+    'title' => 'Social',
+    'icon'  => 'el el-torso'
+]);
+
