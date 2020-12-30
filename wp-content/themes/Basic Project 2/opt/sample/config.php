@@ -429,3 +429,9 @@ Redux::setSection('My_Redux',[
     'icon'  => 'el el-torso'
 ]);
 
+Redux::setSection('My_Redux', array(
+    'title' => esc_html__('Section title', 'travel') ,
+    'id' => esc_html__('section-unique-id', ' travel') ,
+    'icon' => 'icon-name',
+    'fields' => array()
+));
